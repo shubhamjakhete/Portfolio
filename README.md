@@ -1,100 +1,85 @@
-# Full Stack React & Node.js Application
+# Personal Portfolio Website
 
-This is a full-stack application built with React.js (frontend) and Node.js/Express (backend).
+A modern, responsive portfolio website built with React and Node.js.
+
+## Features
+
+- Modern and responsive design
+- Dark theme
+- Interactive navigation
+- Social media integration
+- Company showcase section
+- Contact form
+
+## Tech Stack
+
+- Frontend:
+  - React
+  - Tailwind CSS
+  - React Router
+  - React Icons
+  - Axios
+
+- Backend:
+  - Node.js
+  - Express
+  - CORS
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd portfolio-website
+```
+
+2. Install dependencies:
+```bash
+# Install client dependencies
+cd client
+npm install
+
+# Install server dependencies
+cd ../server
+npm install
+```
+
+3. Start the development servers:
+
+In the server directory:
+```bash
+npm start
+```
+
+In the client directory:
+```bash
+npm start
+```
+
+The client will run on `http://localhost:3000` and the server on `http://localhost:5000`.
 
 ## Project Structure
 
 ```
-.
+/
 ├── client/             # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── utils/
-│   └── package.json
-│
-└── server/             # Node.js backend
-    ├── routes/
-    ├── controllers/
-    ├── models/
-    ├── middleware/
-    ├── index.js
-    └── package.json
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.js
+└── server/            # Node.js backend
+    └── index.js
 ```
 
-## Prerequisites
+## Contributing
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-
-## Getting Started
-
-### Setting up the Backend
-
-1. Navigate to the server directory:
-   ```bash
-   cd server
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the server directory:
-   ```
-   PORT=5000
-   NODE_ENV=development
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-The server will start on http://localhost:5000
-
-### Setting up the Frontend
-
-1. Navigate to the client directory:
-   ```bash
-   cd client
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-The client will start on http://localhost:3000
-
-## Available Scripts
-
-In the server directory:
-- `npm start`: Starts the server in production mode
-- `npm run dev`: Starts the server in development mode with nodemon
-
-In the client directory:
-- `npm start`: Starts the development server
-- `npm build`: Builds the app for production
-- `npm test`: Runs the test suite
-- `npm run eject`: Ejects from create-react-app
-
-## Features
-
-- React frontend with React Router for navigation
-- Express backend with basic API setup
-- CORS enabled
-- Security middleware with helmet
-- Environment variables support
-- Development and production configurations
-- Proxy configuration for development
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-ISC 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
