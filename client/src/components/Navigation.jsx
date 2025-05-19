@@ -14,8 +14,8 @@ const Navigation = () => {
               <Link to="/" className={`hover:text-gray-300 transition-colors ${location.pathname === '/' ? 'text-white' : 'text-gray-400'}`}>
                 Home
               </Link>
-              <Link to="/case-studies" className={`hover:text-gray-300 transition-colors ${location.pathname === '/case-studies' ? 'text-white' : 'text-gray-400'}`}>
-                Case Studies
+              <Link to="/about-me" className={`hover:text-gray-300 transition-colors ${location.pathname === '/about-me' ? 'text-white' : 'text-gray-400'}`}>
+                About Me
               </Link>
               <Link to="/testimonials" className={`hover:text-gray-300 transition-colors ${location.pathname === '/testimonials' ? 'text-white' : 'text-gray-400'}`}>
                 Testimonials
