@@ -22,6 +22,7 @@ import {
   SiScala,
   SiTensorflow
 } from 'react-icons/si';
+import profileImage from '../assets/SJ_Portfolio_Profile.png';
 
 const Hero = () => {
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
         <div className="container mx-auto px-6 py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-8">Shubham Jakhete</h1>
+              <h1 className="text-5xl lg:text-6xl font-bold mb-8 hover:text-gray-300 transition-colors duration-300">Shubham Jakhete</h1>
               <p className="text-gray-400 text-lg mb-12 max-w-lg">
                 Software Engineer | Full-Stack Developer | AI/ML Practitioner | Exploring Knowledge Graphs, Ontologies & Semantic Web AI | 2026 Graduate
               </p>
@@ -45,11 +46,11 @@ const Hero = () => {
               </button>
             </div>
             <div className="lg:w-1/2 flex justify-center">
-              <div className="w-80 h-80 rounded-full overflow-hidden bg-gray-700">
+              <div className="w-96 h-96 rounded-full overflow-hidden border-4 border-white/10 shadow-lg shadow-white/10 transform hover:scale-105 transition-all duration-500">
                 <img 
-                  src="https://placekitten.com/800/800" 
-                  alt="Profile" 
-                  className="w-full h-full object-cover"
+                  src={profileImage}
+                  alt="Shubham Jakhete" 
+                  className="w-full h-full object-cover object-[65%_center] scale-125"
                 />
               </div>
             </div>
