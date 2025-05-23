@@ -1,11 +1,14 @@
 # Dependencies
-/node_modules
-/client/node_modules
-/server/node_modules
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
 
 # Production
 /build
-/client/build
+/dist
 
 # Misc
 .DS_Store
@@ -14,7 +17,19 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env*
 
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDE specific files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Cache
+.cache/
+client/node_modules/.cache/
