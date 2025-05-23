@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with React and Node.js.
 - Dark theme
 - Interactive navigation
 - Social media integration
-- Company showcase section
+- Tech Stack showcase section
 - Contact form
 
 ## Tech Stack
