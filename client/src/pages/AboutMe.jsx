@@ -21,7 +21,7 @@ const AboutMe = () => {
           <section className="mb-8 animate-slide-up opacity-0" style={{ animationDelay: '200ms' }}>
             <h3 className="text-lg font-semibold text-white mb-2 tracking-wide hover:text-gray-300 transition-colors duration-300">Summary</h3>
             <p className="text-gray-300 leading-relaxed hover:text-gray-200 transition-colors duration-300">
-               Skilleddeveloper with a passion for building scalable web applications and working across the full stack. Adept at collaborating in fast-paced teams and delivering high-quality solutions.
+               Skilled developer with a passion for building scalable web applications and working across the full stack. Adept at collaborating in fast-paced teams and delivering high-quality solutions.
             </p>
           </section>
           <hr className="border-t border-white/20 my-8 animate-fade-in" style={{ animationDelay: '300ms' }} />
