@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website built with React and Node.js.
 
+## Live Demo
+
+🚀 [View Live Demo](https://portfolio-rho-dun-62.vercel.app/)
+
 ## Features
 
 - Modern and responsive design
@@ -9,7 +13,8 @@ A modern, responsive portfolio website built with React and Node.js.
 - Interactive navigation
 - Social media integration
 - Tech Stack showcase section
-- Contact form
+- Contact form with email integration
+- Mobile-responsive design
 
 ## Tech Stack
 
@@ -24,6 +29,14 @@ A modern, responsive portfolio website built with React and Node.js.
   - Node.js
   - Express
   - CORS
+  - Nodemailer
+
+## Deployment
+
+The website is deployed on Vercel with the following configuration:
+- Frontend: Automatic deployments from the main branch
+- Backend: Serverless functions for email handling
+- Environment variables configured for secure email service
 
 ## Getting Started
 
@@ -67,9 +80,11 @@ The client will run on `http://localhost:3000` and the server on `http://localho
 │   └── src/
 │       ├── components/
 │       ├── pages/
+│       ├── assets/
 │       └── App.js
 └── server/            # Node.js backend
-    └── index.js
+    ├── index.js      # Main server file
+    └── config/       # Configuration files
 ```
 
 ## Contributing
