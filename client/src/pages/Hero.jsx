@@ -69,7 +69,7 @@ const Hero = () => {
 
         {/* Tech Stack Section */}
         <div className="container mx-auto px-6 py-20 border-t border-gray-800">
-          <h3 className="text-gray-400 mb-12 text-center">Tech Stack</h3>
+          <h3 className="text-gray-400 mb-12 text-center">Tech Stack - Every tools here is part of a built ans shipped project. Explore Recent Works.</h3>
           <Marquee direction="right" speed={50} gradient={false}>
             <div className="flex space-x-16 mx-4">
               {/* Web Technologies */}
