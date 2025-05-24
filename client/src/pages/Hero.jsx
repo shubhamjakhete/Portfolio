@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   FaNode, 
   FaAws, 
@@ -25,6 +26,13 @@ import {
 import profileImage from '../assets/SJ_Portfolio_Profile.png';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/about-me');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
@@ -39,7 +47,9 @@ const Hero = () => {
               <p className="text-gray-400 text-lg mb-12 max-w-lg">
                 Software Engineer | Full-Stack Developer | AI/ML Practitioner | Exploring Knowledge Graphs, Ontologies & Semantic Web AI | 2026 Graduate
               </p>
-              <button className="border border-white text-white px-8 py-4 rounded-md text-lg 
+              <button 
+                onClick={handleGetStarted}
+                className="border border-white text-white px-8 py-4 rounded-md text-lg 
                 hover:bg-white hover:text-black transition-all duration-300 
                 backdrop-blur-sm">
                 Let's get started →
