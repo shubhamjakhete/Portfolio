@@ -114,20 +114,11 @@ const AboutMe = () => {
           <section className="mb-12 animate-slide-up opacity-0" style={{ animationDelay: '1000ms' }}>
             <h3 className="text-2xl font-semibold text-white mb-6 tracking-wide hover:text-gray-300 transition-colors duration-300">Contact</h3>
             <div className="text-gray-400 text-lg space-y-3 transform hover:scale-105 transition-transform duration-300 hover:bg-white/5 p-6 rounded-lg">
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
-                <div>
-                  <span className="text-white">Email: </span>
-                  <a href="mailto:shubhamsjakhete@gmail.com" className="hover:text-white underline">shubhamsjakhete@gmail.com</a>
-                </div>
-                <div className="mt-2 lg:mt-0">
-                  <span className="text-white">Location: </span>
-                  <span>San Francisco, CA</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 pt-2">
-                <a href="https://www.linkedin.com/in/shubham-jakhete" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">LinkedIn</a>
-                <span className="text-gray-500">|</span>
-                <a href="https://github.com/shubhamjakhete" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">GitHub</a>
+              <div>Reach me at <a href="mailto:shubhamsjakhete@gmail.com" className="hover:text-white underline">shubhamsjakhete@gmail.com</a> or on LinkedIn at <a href="https://www.linkedin.com/in/shubham-jakhete" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">https://www.linkedin.com/in/shubham-jakhete</a>. Let's connect and build something great together!</div>
+              <div>Location: San Francisco, CA</div>
+              <div>
+                <a href="https://www.linkedin.com/in/shubham-jakhete" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">LinkedIn</a> |
+                <a href="https://github.com/shubhamjakhete" target="_blank" rel="noopener noreferrer" className="hover:text-white underline ml-1">GitHub</a>
               </div>
             </div>
           </section>

@@ -75,24 +75,34 @@ const Hero = () => {
         {/* Tech Stack Section */}
         <div className="py-16 lg:py-24 bg-white/5">
           <div className="container mx-auto px-6 lg:px-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Tech Stack</h2>
+            <h3 className="text-gray-400 mb-12 text-center">Tech Stack - Every tools here is part of a built and shipped project. Explore Recent Works.</h3>
             <div className="max-w-7xl mx-auto">
               <Marquee gradient={false} speed={50} className="py-8">
                 <div className="flex space-x-16 mx-8">
-                  <FaReact className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  {/* Web Technologies */}
+                  <FaHtml5 className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                   <FaJs className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <FaPython className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <FaReact className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                   <FaNode className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <FaAws className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <FaDocker className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <FaGoogle className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <FaDatabase className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <SiTailwindcss className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  
+                  {/* AI/ML */}
+                  <SiTensorflow className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                   <FaBrain className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <FaPython className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  
+                  {/* Databases */}
                   <SiMongodb className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                   <SiPostgresql className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <SiTailwindcss className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <FaDatabase className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  
+                  {/* Cloud & DevOps */}
+                  <FaGoogle className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <FaAws className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  <FaDocker className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
+                  
+                  {/* Programming Languages */}
                   <SiScala className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
-                  <SiTensorflow className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                   <FaGithub className="w-12 h-12 lg:w-16 lg:h-16 text-white hover:text-gray-300 transition-colors duration-300" />
                 </div>
               </Marquee>
