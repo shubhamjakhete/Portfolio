@@ -80,15 +80,18 @@ const RecentWork = () => {
       <Navigation />
       
       {/* Main content with proper spacing */}
-      <main className="pt-24">
-        <div className="container mx-auto px-6 py-16">
+      <main className="pt-24 pb-12">
+        <div className="container mx-auto px-6 lg:px-8 py-16 lg:py-24">
           {/* Header Section with animations */}
-          <div className="text-center mb-20 opacity-0 animate-fade-in" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-            <h1 className="text-4xl font-bold mb-6 transform translate-y-10 animate-slide-up hover:text-gray-300 transition-colors duration-300" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+          <div className="text-center mb-20 opacity-0 animate-fade-in max-w-4xl mx-auto" 
+               style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 transform translate-y-10 animate-slide-up hover:text-gray-300 transition-colors duration-300" 
+                style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
               Recent Work
             </h1>
             <div className="overflow-hidden">
-              <p className="text-gray-400 text-lg max-w-2xl mx-auto transform translate-y-10 animate-slide-up" style={{ animationDelay: '600ms', animationFillMode: 'forwards' }}>
+              <p className="text-gray-400 text-xl lg:text-2xl leading-relaxed transform translate-y-10 animate-slide-up" 
+                 style={{ animationDelay: '600ms', animationFillMode: 'forwards' }}>
                 Exploring innovative solutions through technology. Here are some of my recent projects 
                 that showcase my expertise in full-stack development, blockchain, and data analytics.
               </p>
@@ -96,26 +99,33 @@ const RecentWork = () => {
           </div>
 
           {/* Projects Slider with animations */}
-          <div className="relative max-w-7xl mx-auto px-16 opacity-0 animate-fade-in" style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
+          <div className="relative max-w-7xl mx-auto px-8 lg:px-16 opacity-0 animate-fade-in" 
+               style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
             <Slider {...settings} className="h-full">
               {projects.map((project, index) => (
-                <div key={project.id} className="outline-none px-4 h-full flex flex-col opacity-0 animate-fade-in" 
+                <div key={project.id} 
+                     className="outline-none px-4 h-full flex flex-col opacity-0 animate-fade-in" 
                      style={{ animationDelay: `${1000 + index * 200}ms`, animationFillMode: 'forwards' }}>
-                  <div className="bg-black/30 rounded-lg p-6 h-full backdrop-blur-sm border border-white/10 flex flex-col flex-1
-                                transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-white/10
-                                hover:border-white/20">
-                    <div className="relative overflow-hidden rounded-lg mb-6 group">
+                  <div className="bg-black/30 rounded-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/10 
+                                flex flex-col flex-1 transform transition-all duration-500 
+                                hover:scale-[1.02] hover:shadow-2xl hover:shadow-white/10 hover:border-white/20">
+                    <div className="relative overflow-hidden rounded-xl mb-8 group aspect-video">
                       <img 
                         src={project.image} 
                         alt={project.title}
-                        className="w-full h-[300px] object-cover transform transition-all duration-500 
+                        className="w-full h-full object-cover transform transition-all duration-500 
                                  group-hover:scale-110 group-hover:rotate-1"
                       />
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 
+                                    transition-opacity duration-500"></div>
                     </div>
+                    
                     <div className="text-left flex flex-col flex-1 transform transition-transform duration-500">
-                      <h3 className="text-2xl font-bold mb-4 group-hover:translate-x-2">{project.title}</h3>
-                      <p className="text-gray-400 mb-6 flex-1 group-hover:translate-x-2 transition-transform duration-500 delay-100">
+                      <h3 className="text-2xl lg:text-3xl font-bold mb-6 group-hover:translate-x-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-400 text-lg lg:text-xl mb-8 flex-1 group-hover:translate-x-2 
+                                  transition-transform duration-500 delay-100 leading-relaxed">
                         {project.description}
                       </p>
                       <div className="mt-auto">
@@ -123,11 +133,13 @@ const RecentWork = () => {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center space-x-2 text-white border border-white px-6 py-3 rounded-md
-                                   hover:bg-white hover:text-black transition-all duration-300 transform hover:translate-x-2"
+                          className="inline-flex items-center space-x-3 text-lg text-white border-2 border-white 
+                                   px-8 py-4 rounded-lg hover:bg-white hover:text-black transition-all duration-300 
+                                   transform hover:translate-x-2 hover:scale-105"
                         >
-                          <span>Know more</span>
-                          <FaArrowRight className="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-2" />
+                          <span>View Project</span>
+                          <FaArrowRight className="w-5 h-5 transform transition-transform duration-300 
+                                                 group-hover:translate-x-2" />
                         </a>
                       </div>
                     </div>
